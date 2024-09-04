@@ -1,0 +1,6 @@
+# toml is just a file format for configuration. when using netlify need to add this coz react is spa or routing handled #client side within the browser and it handles route itself whichever route is not handled by server. but netlify #doesn't acess index.html so throws error #when page refreshed.Netlify, or any static hosting service, serves static #files directly from the server. When a user navigates to a route #that's not the root (like /about or /profile), #Netlify will attempt to locate a file at that path. If it doesn’t find #a corresponding file, it will return a 404 #error. This is because Netlify is serving static files and doesn’t #inherently know about the client-side routing #managed by React Router.Below rule tells Netlify to redirect all requests to /index.html, allowing React Router to #handle routing on the client side.
+
+[[redirects]]
+from = "/*" # This matches all routes.
+to = "/index.html" # This redirects all routes to the index.html file.
+status = 200 # This indicates a successful response.
