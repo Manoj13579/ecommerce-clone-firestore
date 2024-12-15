@@ -5,7 +5,7 @@ import { getStorage } from "firebase/storage";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyALSSXr1VpOcC0A3EGsz-mVpetuo0ZP_3k",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "daraz-14587.firebaseapp.com",
   projectId: "daraz-14587",
   storageBucket: "daraz-14587.appspot.com",
