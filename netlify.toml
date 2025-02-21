@@ -6,3 +6,4 @@
 from = "/*" # This matches all routes.
 to = "/index.html" # This redirects all routes to the index.html file.
 status = 200 # This indicates a successful response.
+force = true
