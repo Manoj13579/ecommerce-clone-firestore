@@ -3,7 +3,7 @@
 # when not refreshed works coz all files are in browser so ./dashboard works this request is handled in browser. but when #refreshed ./dashboard request goes to server/netlify coz netlify serves only static file it won't find this route. but # # when redirected all routes to the index.html file react router handles from there.
 
 [[redirects]]
-from = "/*" # This matches all routes.
-to = "/index.html" # This redirects all routes to the index.html file.
-status = 200 # This indicates a successful response.
+from = "/*"
+to = "/index.html"
+status = 200
 force = true
